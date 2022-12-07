@@ -107,10 +107,10 @@ for epoch_id in range(EPOCH_NUM):
         opt.clear_grad()
 
 # 4. 保存模型参数到字典中，将字典落盘为LR_model.pdparams文件
-paddle.save(model.state_dict(), 'LR_model.pdparams')
+paddle.save(model.state_dict(), '../output/bostom_house_price/LR_model.pdparams')
 
 # 读取模型，参数为保存模型参数的文件地址
-model_dict = paddle.load('LR_model.pdparams')
+model_dict = paddle.load('../output/bostom_house_price/LR_model.pdparams')
 model.load_dict(model_dict)
 
 # 将该模型及其所有子层设置为预测模式

@@ -7,3 +7,5 @@
 *.iml
 out
 gen
+com.cj.paddle/dataset/pathologic_myopia
+com.cj.paddle/output
